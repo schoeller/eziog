@@ -1,0 +1,15 @@
+Installation
+
+1. ezpublish-legacy per git auschecken mit 
+git clone https://github.com/ezsystems/ezpublish-legacy
+
+2. ezpublish installieren mit ezdemo-umgebung
+
+3. eziog auschecken mit
+git clone https://github.com/schoeller/eziog
+
+4. alle Einträge "ezdemo" unterhalb von settings/ ersetzen mit "eziog" z.B. so
+find . -type f | grep php$ | xargs -n1 -i sed -i 's/ezdemo/eziog/' {}
+
+5. alle Cache-Einträge löschen mithilfe von
+php bin/php/ezcache.php --clear-all --purge
