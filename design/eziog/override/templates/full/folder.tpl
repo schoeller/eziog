@@ -4,9 +4,23 @@
 
 {def $rss_export = fetch( 'rss', 'export_by_node', hash( 'node_id', $node.node_id ) )}
 
+{def $root_node = fetch( 'content', 'node', hash( 'node_id', $node.path_array[$node.depth] ) )
+     $menu_items = fetch( 'content', 'list', hash( 'parent_node_id', $root_node.node_id,
+                                                   'sort_by', $root_node.sort_array,
+                                                   'load_data_map', false(),
+                                                   'class_filter_type', 'include',
+                                                   'class_filter_array', ezini( 'MenuContentSettings', 'RightIdentifierList', 'menu.ini' ) ) )
+     $menu_items_count = $menu_items|count()}
+
+{if or($menu_items_count, $node.data_map.call_for_action.has_content)}
+    {def $col = 7}
+{else}
+    {def $col = 10}
+{/if}
+
 <section class="content-view-full">
     <div class="class-folder row">
-        <div class="span6">
+        <div class="span{$col}">
             {if $rss_export}
             <div class="attribute-rss-icon">
                 <a href="{concat( '/rss/feed/', $rss_export.access_url )|ezurl( 'no' )}" title="{$rss_export.title|wash()}"><img src="{'rss-icon.gif'|ezimage( 'no' )}" alt="{$rss_export.title|wash()}" /></a>
@@ -57,7 +71,7 @@
                                                                 'class_filter_type', 'exclude',
                                                                 'class_filter_array', $classes,
                                                                 'limit', $page_limit ) ) as $child }
-                            {node_view_gui view='line' content_node=$child}
+                            {node_view_gui view='line' content_node=$child size=$col}
                         {/foreach}
                     {/if}
                 </section>
@@ -71,20 +85,14 @@
 
             {/if}
         </div>
+        {if or($menu_items_count, $node.data_map.call_for_action.has_content)}
         <div class="span3">
             <aside>
-                {def $root_node = fetch( 'content', 'node', hash( 'node_id', $node.path_array[$node.depth] ) )
-                     $menu_items = fetch( 'content', 'list', hash( 'parent_node_id', $root_node.node_id,
-                                                                   'sort_by', $root_node.sort_array,
-                                                                   'load_data_map', false(),
-                                                                   'class_filter_type', 'include',
-                                                                   'class_filter_array', ezini( 'MenuContentSettings', 'RightIdentifierList', 'menu.ini' ) ) )
-                     $menu_items_count = $menu_items|count()}
+                {if $menu_items_count}
                 <section class="subnavigation row nav-collapse">
                     <div class="attribute-header">
                         <h2>{$node.name|wash()}</h2>
                     </div>
-                    {if $menu_items_count}
                     <ul class="span3">
                         {foreach $menu_items as $key => $item}
                             {if eq( $item.class_identifier, 'link')}
@@ -113,15 +121,18 @@
                             </li>
                         {/foreach}
                     </ul>
-                    {/if}
-                    {undef $root_node $menu_items $menu_items_count}
+                {undef $root_node $menu_items $menu_items_count}
                 </section>
+                {/if}
+                {if $node.data_map.call_for_action.has_content}
                 <section class="content-view-aside">
                     <div class="attribute-call-for-action">
-                        {attribute_view_gui attribute=$node.data_map.call_for_action size=2}
+                        {attribute_view_gui attribute=$node.data_map.call_for_action size=3}
                     </div>
                 </section>
+                {/if}
             </aside>
         </div>
+        {/if}
     </div>
 </section>
