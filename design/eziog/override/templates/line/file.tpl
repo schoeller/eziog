@@ -3,7 +3,7 @@
 <div class="content-view-line">
     <div class="attribute-header">
         <h2>
-            <a href="{$node.url_alias|ezurl( 'no' )}" class="teaser-link">{$node.name|wash()}</a>
+            {$node.name|wash()}
         </h2>
     </div>
     <article class="class-file file-to-download">
