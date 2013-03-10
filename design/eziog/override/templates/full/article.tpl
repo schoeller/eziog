@@ -2,6 +2,8 @@
 {set scope=global persistent_variable=hash('left_menu', true(),
                                            'extra_menu', true())}
 
+{include uri="design:parts/opengraph_set_persistent.tpl"}
+
 <section class="content-view-full">
     <article class="class-article row">
         <div class="span8">

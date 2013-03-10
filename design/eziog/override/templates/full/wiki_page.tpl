@@ -43,7 +43,7 @@
             </div>
 
             {include name=navigator
-                     uri='design:navigator/google.tpl'
+                     uri='design:navigator/piwik.tpl'
                      page_uri=$node.url_alias
                      item_count=$children_count
                      view_parameters=$view_parameters
