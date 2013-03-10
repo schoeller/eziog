@@ -1,5 +1,8 @@
 <!-- Footer area: START -->
-{def $footer_node = fetch( 'content', 'node', hash( 'node_id', ezini( 'FooterSettings', 'NodeID', 'content.ini' ) ) )}
+{def $footer_node = fetch( 'content', 'tree', hash( 'parent_node_id', 1,
+                                                             'limit', 1,
+                                                             'class_filter_type', include,
+                                                             'class_filter_array', array( 'footer' ) ) )}
 <footer>
     <div class="claim-wrapper">
         <div class="container">
@@ -11,16 +14,16 @@
     <div class="container">
         <div class="row">
             <div class="span4">
-                {include uri='design:footer/address.tpl' node=$footer_node}
+                {include uri='design:footer/address.tpl' node=$footer_node[0]}
             </div>
             <div class="span4 nav-collapse">
                 {include uri='design:footer/latest_news.tpl'}
             </div>
             <div class="span4 nav-collapse">
-                {include uri='design:footer/links.tpl' node=$footer_node}
+                {include uri='design:footer/links.tpl' node=$footer_node[0]}
             </div>
             <div class="span4 nav-collapse">
-                {include uri='design:footer/impressum.tpl' node=$footer_node}
+                {include uri='design:footer/impressum.tpl' node=$footer_node[0]}
             </div>
         </div>
     </div>
