@@ -1,5 +1,4 @@
 {* Article - Line view *}
-{def $content_size = '8'}
 
 <div class="content-view-line">
     <article class="class-article row">
@@ -10,10 +9,10 @@
             {attribute_view_gui image_class=articlethumbnail href=$node.url_alias|ezurl attribute=$node.data_map.image}
         </div>
     </div>
-        {set $content_size = '6'}
+        {set $size = $size|sub(2)}
     {/if}
 
-    <div class="span{$content_size}">
+    <div class="span{$size}">
         <div class="attribute-header">
             <h2>
                 <a href="{$node.url_alias|ezurl( 'no' )}" class="teaser-link">{$node.data_map.title.content|wash()}</a>

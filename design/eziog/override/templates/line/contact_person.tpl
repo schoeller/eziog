@@ -1,6 +1,8 @@
 {* Contact person - Line view *}
 {def $user=fetch(content,object, hash(object_id, $node.data_map.user.content.relation_list[0].contentobject_id))}
 
+{include uri="design:parts/pagedata.tpl"}
+
 <div class="content-view-line">
     <article class="class-contact_person row">
 
