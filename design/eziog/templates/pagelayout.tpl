@@ -27,6 +27,8 @@
 {include uri='design:page_head_style.tpl'}
 {include uri='design:page_head_script.tpl'}
 
+{include uri="design:parts/opengraph_persistent.tpl"}
+
 </head>
 <body>
 <!-- Complete page area: START -->
