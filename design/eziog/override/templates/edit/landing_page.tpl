@@ -80,7 +80,7 @@
 
     <!-- SEARCH BOX: END -->
     </div>
-    <div class="span9">
+    <div class="span13">
     <div class="attribute-header">
         <h1 class="long">{'Edit <%object_name> (%class_name)'|i18n( 'design/ezflow/edit/frontpage', , hash( '%object_name', $object.name, '%class_name', first_set( $class.nameList[$content_language], $class.name ) ) )|wash}</h1>
     </div>
