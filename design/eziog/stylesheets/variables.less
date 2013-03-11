@@ -9,38 +9,38 @@
 
 // Links
 @linkColor:             @blueDark;
-@linkColorHover:        @blueDark;
+@linkColorHover:        @blueLightest;
 
 // Grays
-@black:                 #000;
-@grayDarker:            #222;
-@grayDark:              #333;
-@grayLower:             rgba(111, 111, 111, 1);
-@grayLow:               rgba(150, 150, 150 ,1);
-@gray:                  rgba(174, 174, 174, 1);
-@grayLight:             rgba(219, 219, 220, 1);
-@grayLighter:           rgba(235, 235, 235, 1);
+@black:                 rgba(85, 43, 54, 1);
+@grayDarker:            rgba(45, 59, 88, 1);
+@grayDark:              rgba(45, 59, 88, 1);
+@grayLower:             rgba(179, 180, 183, 1);
+@grayLow:               rgba(179, 180, 183, 1);
+@gray:                  rgba(210, 211, 213, 1);
+@grayLight:             rgba(231, 231, 232, 1);
+@grayLighter:           rgba(243, 243, 244, 1);
 @softwhite:             rgba(249, 249, 249, 1);
 @white:                 rgba(255, 255, 255, 1);
 
 // Accent colors
-@blue:                  rgba(  0, 126, 166, 1);
-@blueDark:              rgba(  0, 106, 141, 1);
-@blueDarker:            rgba(  0,  77, 102, 1);
-@blueDarkest:           rgba(  0,  44,  58, 1);
-@blueLightest:          rgba(242, 246, 247, 1);
-@green:                 #46a546;
+@blue:                  rgba(  4,  30,  66, 1);
+@blueDark:              rgba(  4,  30,  66, 1);
+@blueDarker:            rgba(  4,  30,  66, 1);
+@blueDarkest:           rgba(  4,  30,  66, 1);
+@blueLightest:          rgba(  0, 169, 224, 1);
+@green:                 rgba(196, 214,   0, 1);
 @red:                   rgba(226,   0,   8, 1);
 @yellow:                #ffc40d;
-@orange:                rgba(229, 121,  16, 1);
+@orange:                rgba(237, 139,   0, 1);
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
 // Typography
-@baseFontSize:          15px;
+@baseFontSize:          14px;
 @baseFontFamily:        Arial, Helvetica, sans-serif;
 @baseLineHeight:        21px;
-@specialFontFamily:     "Ubuntu", Helvetica, Arial, sans-serif;
+@specialFontFamily:     Arial, Helvetica, sans-serif;
 @serifFontFamily:       "Georgia", "Times New Roman", serif;
 @textColor:             @grayDark;
 
@@ -48,7 +48,7 @@
 @primaryButtonBackground:    @linkColor;
 
 // Sprites
-@imagedir:              "/extension/eziog/design/eziog/images/";
+@imagedir:  		"/extension/eziog/design/eziog/images/";
 @spriteURL:             url('@{imagedir}ez-sprite.png');
 
 // COMPONENT VARIABLES
@@ -82,7 +82,7 @@
 @navbarLinkBackgroundHover:       transparent;
 
 @navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLighter;
+@navbarLinkColor:                 @grayLight;
 @navbarLinkColorHover:            @white;
 @navbarSublevelLinkColor:         @blueDark;
 @navbarSublevelLinkColorHover:    @blue;
@@ -113,10 +113,10 @@
 
 // Default 940px grid
 @gridColumns:             16;
-@gridColumnWidth:         45px;
+@gridColumnWidth:         40px;
 @gridGutterWidth:         20px;
 @gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
 
 // Fluid grid
-@fluidGridColumnWidth:    4.78723404225%;
-@fluidGridGutterWidth:    1.5957446805%;
+@fluidGridColumnWidth:    6.382978723%;
+@fluidGridGutterWidth:    2.127659574%;

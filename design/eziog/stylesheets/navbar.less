@@ -1,6 +1,7 @@
 // NAVBAR (FIXED AND STATIC)
 // -------------------------
 
+@imagedir:              "/extension/eziog/design/eziog/images/";
 
 // COMMON STYLES
 // -------------
@@ -13,9 +14,9 @@
 // Gradient is applied to it's own element because overflow visible is not honored by IE when filter is present
 .navbar-inner,
 .claim-wrapper {
-  padding-left:  20px;
-  padding-right: 20px;
-  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+  padding-left:  0px;
+  padding-right: 0px;
+  gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
     &.sublevel {
         #gradient > .vertical(@softwhite, @grayLighter);
         border-bottom: 1px solid @grayLight;
@@ -26,9 +27,9 @@
 .btn-navbar {
   display: none;
   .clearfix();
-  padding: 4px 5px;
+  padding: 12px 10px;
   border: 1px solid @grayLight;
-  font-size: 16px;
+  font-size: 30px;
   text-align: left;
   color: @grayLower;
   margin-bottom: 5px;
@@ -37,11 +38,11 @@
   &:after {
       content: "";
       position: absolute;
-      width: 10px;
-      height: 16px;
-      .sprite(transparent, -132px, -28px);
+      width: 17px;
+      height: 26px;
+      .sprite(transparent, -128px, -22px);
       right: 7px;
-      top: 7px;
+      top: 10px;
   }
 }
 // Override the default collapsed state
@@ -195,14 +196,15 @@
         > li {
           display: block;
           float: left;
-            border-left: 1px solid rgba(0, 135, 178, 0.52);
-            border-right: 1px solid rgba(13, 92, 120, 0.42);
+            border-left: 1px solid rgba(255, 255, 255, 0.24);
+            border-right: 1px solid rgba(0, 0, 0, 0.62);
             &:first-child {
                 border-left: none;
             }
             &:last-child {
                 border-right: none;
             }
+	  background: url(@{imagedir}bg-navi-li.gif) 17px 14px no-repeat;
         }
     }
     .sublevel {
@@ -221,6 +223,7 @@
             > li {
                 border: none;
                 position: relative;
+                background: url(@{imagedir}bg-navi-li.gif) 5px 10px no-repeat;
             }
         }
         #lang-selector {
@@ -270,7 +273,7 @@
 .navbar {
     .nav > li > a {
     float: none;
-    padding: 7px 10px;
+    padding: 7px 25px;
     line-height: 19px;
     color: @navbarLinkColor;
     text-decoration: none;
@@ -419,3 +422,4 @@
     right: 13px;
   }
 }
+
