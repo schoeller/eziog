@@ -3,6 +3,7 @@
 # Image aliases used by eZ Flow blocks
 
 [AliasSettings]
+AliasList[]=banner
 AliasList[]=campaign
 AliasList[]=backgroundimage
 AliasList[]=highlighted
@@ -10,6 +11,11 @@ AliasList[]=contentgrid
 AliasList[]=gallery
 AliasList[]=galleryfull
 AliasList[]=imagefull
+
+[banner]
+Reference=original
+Filters[]=geometry/scalewidthdownonly=1195
+Filters[]=geometry/crop=1195;318;0;0
 
 [campaign]
 Reference=original
