@@ -19,8 +19,6 @@ ViewCaching=disabled
  
 [DebugSettings]
 Debug=inline
-DebugByUser=enabled
-DebugUserIDList[]=14
 DebugOutput=enabled
 DebugRedirection=disabled
  
