@@ -15,7 +15,7 @@ AliasList[]=imagefull
 [banner]
 Reference=original
 Filters[]=geometry/scalewidthdownonly=1195
-Filters[]=geometry/crop=1195;318;0;0
+Filters[]=geometry/crop=1195;218;0;0
 
 [campaign]
 Reference=original

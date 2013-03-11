@@ -22,6 +22,7 @@
 
     {if $left_menu_items_count}
         <ul class="span3">
+
         {foreach $left_menu_items as $key => $item}
             {set $a_class = cond($current_node_in_path_2|eq($item.node_id), array("selected"), array())
                  $li_class = cond( $key|eq(0), array("firstli"), array() )}
@@ -46,7 +47,7 @@
                                                                       'class_filter_array', ezini( 'MenuContentSettings', 'LeftIdentifierList', 'menu.ini' ) ) )
                      $sub_menu_items_count = $sub_menu_items|count}
                 {if $sub_menu_items_count}
-                <ul class="span3">
+                <ul>
                     {foreach $sub_menu_items as $subkey => $subitem}
                        {set $a_class = cond($current_node_in_path_3|eq($subitem.node_id), array("selected"), array())
                          $li_class = cond( $subkey|eq(0), array("firstli"), array() )}
