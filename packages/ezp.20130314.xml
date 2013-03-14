@@ -1741,10 +1741,10 @@
   </Attribute>
 </Attributes>
 </ContentClass>
-<ContentClass isContainer="true" identifier="global_layout" remoteID="f163379b1e24c3e89dd986827c671bdf" objectNamePattern="&lt;name&gt;" urlAliasPattern="" classExistAction="replace">
-<Names eng-GB="Global layout" always-available="eng-GB"/>
+<ContentClass isContainer="true" identifier="global_right_layout" remoteID="f163379b1e24c3e89dd986827c671bdf" objectNamePattern="&lt;name&gt;" urlAliasPattern="" classExistAction="replace">
+<Names eng-GB="Global right layout" always-available="eng-GB"/>
 <Groups>
-  <Group id="1" name="Content"/>
+  <Group id="4" name="Setup"/>
 </Groups>
 <Attributes>
   <Attribute datatype="ezstring" required="true" searchable="true" informationCollector="false" translatable="true" identifier="name" placement="1">
@@ -1771,7 +1771,7 @@
 <ContentClass isContainer="false" identifier="global_footer" remoteID="9bbfff1b81bc346e2ab0abeaeb44b7aa" objectNamePattern="&lt;name&gt;" urlAliasPattern="" classExistAction="replace">
 <Names ger-DE="Global footer" always-available="ger-DE"/>
 <Groups>
-  <Group id="1" name="Content"/>
+  <Group id="4" name="Setup"/>
 </Groups>
 <Attributes>
   <Attribute datatype="ezstring" required="true" searchable="false" informationCollector="false" translatable="true" identifier="slogan" placement="1">
