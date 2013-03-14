@@ -7,23 +7,23 @@
     <div class="claim-wrapper">
         <div class="container">
             <div class="nav-collapse">
-                Powered by <a href="http://ez.no/ezpublish" title="eZ Publish&#8482; CMS Open Source Web Content Management">eZ Publish&#8482; CMS Open Source Web Content Management</a>.
+               {attribute_view_gui attribute=$footer_node[0].data_map.title} 
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="span4">
-                {include uri='design:footer/address.tpl' node=$footer_node[0]}
+                {attribute_view_gui attribute=$footer_node[0].data_map.col_1}
             </div>
             <div class="span4 nav-collapse">
-                {include uri='design:footer/latest_news.tpl'}
+                {attribute_view_gui attribute=$footer_node[0].data_map.col_2}
             </div>
             <div class="span4 nav-collapse">
-                {include uri='design:footer/links.tpl' node=$footer_node[0]}
+                {attribute_view_gui attribute=$footer_node[0].data_map.col_3}
             </div>
             <div class="span4 nav-collapse">
-                {include uri='design:footer/impressum.tpl' node=$footer_node[0]}
+                {attribute_view_gui attribute=$footer_node[0].data_map.col_4}
             </div>
         </div>
     </div>
