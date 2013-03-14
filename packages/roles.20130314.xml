@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eZXMLImporter>
+  <CreateRole>     <Role name="Anonymous" createRole="true">
+                <Policy module="content" function="pdf">
+                        <Limitations>
+                                                <Section>1</Section>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="read">
+                        <Limitations>
+                                                <Section>1</Section>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="read">
+                        <Limitations>
+                                                <Class>27</Class>
+                                    <Class>35</Class>
+                                                                <Section>3</Section>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="rss" function="feed">
+                    </Policy>
+                <Policy module="user" function="login">
+                        <Limitations>
+                                                <SiteAccess>2339567439</SiteAccess>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="user" function="login">
+                        <Limitations>
+                                                <SiteAccess>341347141</SiteAccess>
+                                        </Limitations>
+                    </Policy>
+            </Role>     <Role name="Superadministrator" createRole="true">
+                <Policy module="*" function="*">
+                    </Policy>
+            </Role>     <Role name="Editor" createRole="true">
+                <Policy module="content" function="bookmark">
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>1</Class>
+                                    <Class>16</Class>
+                                    <Class>17</Class>
+                                    <Class>21</Class>
+                                    <Class>22</Class>
+                                    <Class>23</Class>
+                                    <Class>24</Class>
+                                    <Class>25</Class>
+                                    <Class>26</Class>
+                                    <Class>27</Class>
+                                    <Class>28</Class>
+                                    <Class>29</Class>
+                                    <Class>30</Class>
+                                    <Class>34</Class>
+                                    <Class>35</Class>
+                                    <Class>36</Class>
+                                                                <ParentClass>1</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>18</Class>
+                                                                <ParentClass>17</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>31</Class>
+                                                                <ParentClass>30</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>33</Class>
+                                                                <ParentClass>34</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>27</Class>
+                                                                <ParentClass>29</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>1</Class>
+                                    <Class>22</Class>
+                                    <Class>23</Class>
+                                    <Class>24</Class>
+                                    <Class>28</Class>
+                                    <Class>29</Class>
+                                    <Class>34</Class>
+                                    <Class>36</Class>
+                                                                <ParentClass>23</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="dashboard">
+                    </Policy>
+                <Policy module="content" function="diff">
+                    </Policy>
+                <Policy module="content" function="edit">
+                    </Policy>
+                <Policy module="content" function="manage_locations">
+                    </Policy>
+                <Policy module="content" function="pendinglist">
+                    </Policy>
+                <Policy module="content" function="read">
+                        <Limitations>
+                                                <Section>1</Section>
+                                    <Section>3</Section>
+                                    <Section>6</Section>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="remove">
+                    </Policy>
+                <Policy module="content" function="translate">
+                    </Policy>
+                <Policy module="content" function="versionread">
+                    </Policy>
+                <Policy module="content" function="versionremove">
+                    </Policy>
+                <Policy module="content" function="view_embed">
+                    </Policy>
+                <Policy module="ezajax" function="*">
+                    </Policy>
+                <Policy module="ezflow" function="*">
+                    </Policy>
+                <Policy module="ezodf" function="*">
+                    </Policy>
+                <Policy module="ezoe" function="*">
+                    </Policy>
+                <Policy module="ezoe" function="*">
+                    </Policy>
+                <Policy module="notification" function="use">
+                    </Policy>
+                <Policy module="rss" function="feed">
+                    </Policy>
+                <Policy module="user" function="login">
+                    </Policy>
+                <Policy module="websitetoolbar" function="use">
+                        <Limitations>
+                                                <Class>1</Class>
+                                    <Class>16</Class>
+                                    <Class>17</Class>
+                                    <Class>18</Class>
+                                    <Class>21</Class>
+                                    <Class>22</Class>
+                                    <Class>23</Class>
+                                    <Class>24</Class>
+                                    <Class>25</Class>
+                                    <Class>26</Class>
+                                    <Class>27</Class>
+                                    <Class>28</Class>
+                                    <Class>29</Class>
+                                    <Class>30</Class>
+                                    <Class>33</Class>
+                                    <Class>34</Class>
+                                    <Class>36</Class>
+                                        </Limitations>
+                    </Policy>
+            </Role>     <Role name="Partner" createRole="true">
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>31</Class>
+                                                                <Section>6</Section>
+                                                                <ParentClass>30</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>32</Class>
+                                                                <Section>6</Section>
+                                                                <ParentClass>31</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>13</Class>
+                                                                <Section>6</Section>
+                                                                <ParentClass>16</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="edit">
+                        <Limitations>
+                                                <Class>13</Class>
+                                    <Class>31</Class>
+                                    <Class>32</Class>
+                                                                <Section>6</Section>
+                                                                <Owner>1</Owner>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="read">
+                        <Limitations>
+                                                <Section>6</Section>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="notification" function="use">
+                    </Policy>
+                <Policy module="user" function="selfedit">
+                    </Policy>
+            </Role>     <Role name="Member" createRole="true">
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>31</Class>
+                                                                <Section>1</Section>
+                                                                <ParentClass>30</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>32</Class>
+                                                                <Section>1</Section>
+                                                                <ParentClass>31</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="create">
+                        <Limitations>
+                                                <Class>13</Class>
+                                                                <Section>1</Section>
+                                                                <ParentClass>16</ParentClass>
+                                    <ParentClass>18</ParentClass>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="content" function="edit">
+                        <Limitations>
+                                                <Class>13</Class>
+                                    <Class>31</Class>
+                                    <Class>32</Class>
+                                                                <Section>1</Section>
+                                                                <Owner>1</Owner>
+                                        </Limitations>
+                    </Policy>
+                <Policy module="ezjscore" function="call">
+                    </Policy>
+                <Policy module="notification" function="use">
+                    </Policy>
+                <Policy module="user" function="password">
+                    </Policy>
+                <Policy module="user" function="selfedit">
+                    </Policy>
+            </Role>     <Role name="Administrator" createRole="true">
+                <Policy module="class" function="*">
+                    </Policy>
+                <Policy module="collaboration" function="*">
+                    </Policy>
+                <Policy module="comment" function="*">
+                    </Policy>
+                <Policy module="content" function="*">
+                    </Policy>
+                <Policy module="error" function="*">
+                    </Policy>
+                <Policy module="ezflow" function="*">
+                    </Policy>
+                <Policy module="ezinfo" function="*">
+                    </Policy>
+                <Policy module="ezjscore" function="*">
+                    </Policy>
+                <Policy module="ezodf" function="*">
+                    </Policy>
+                <Policy module="ezoe" function="*">
+                    </Policy>
+                <Policy module="flash" function="*">
+                    </Policy>
+                <Policy module="infocollector" function="*">
+                    </Policy>
+                <Policy module="layout" function="*">
+                    </Policy>
+                <Policy module="notification" function="*">
+                    </Policy>
+                <Policy module="nxc_captcha" function="*">
+                    </Policy>
+                <Policy module="oauth" function="*">
+                    </Policy>
+                <Policy module="oauthadmin" function="*">
+                    </Policy>
+                <Policy module="pdf" function="*">
+                    </Policy>
+                <Policy module="rss" function="*">
+                    </Policy>
+                <Policy module="section" function="*">
+                    </Policy>
+                <Policy module="state" function="*">
+                    </Policy>
+                <Policy module="switchlanguage" function="*">
+                    </Policy>
+                <Policy module="trigger" function="*">
+                    </Policy>
+                <Policy module="url" function="*">
+                    </Policy>
+                <Policy module="user" function="*">
+                    </Policy>
+                <Policy module="visual" function="*">
+                    </Policy>
+                <Policy module="websitetoolbar" function="*">
+                    </Policy>
+                <Policy module="workflow" function="*">
+                    </Policy>
+                <Policy module="xmlexport" function="*">
+                    </Policy>
+            </Role>    </CreateRole>
+</eZXMLImporter>
