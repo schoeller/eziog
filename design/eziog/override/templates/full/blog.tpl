@@ -1,10 +1,11 @@
 {* Blog - Full view *}
-{set scope=global persistent_variable=hash('left_menu', false(),
-                                           'extra_menu', false())}
+{set scope=global persistent_variable=hash('left_menu', true(),
+                                           'extra_menu', true())}
+
 <section class="content-view-full">
     <div class="class-blog">
         <div class="row">
-            <div class="span8">
+            <div class="span7">
             {def $page_limit = 10
                  $blogs_count = 0
                  $uniq_id = 0
@@ -68,13 +69,13 @@
             {/if}
 
             {include name=navigator
-                     uri='design:navigator/piwik.tpl'
+                     uri='design:navigator/google.tpl'
                      page_uri=$node.url_alias
                      item_count=$blogs_count
                      view_parameters=$view_parameters
                      item_limit=$page_limit}
             </div>
-            <div class="span4">
+            <div class="span3">
                 <aside>
                     <section class="content-view-aside">
                         {include uri='design:parts/blog/extra_info.tpl' used_node=$node}

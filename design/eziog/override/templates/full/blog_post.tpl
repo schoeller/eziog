@@ -1,12 +1,12 @@
 {* Blog post - Full view *}
-{set scope=global persistent_variable=hash('left_menu', false(),
-                                           'extra_menu', false())}
+{set scope=global persistent_variable=hash('left_menu', true(),
+                                           'extra_menu', true())}
 
 
 <section class="content-view-full">
     <div class="class-blog-post">
         <div class="row">
-            <div class="span8">
+            <div class="span7">
                 <div class="attribute-header">
                     <h1>{$node.data_map.title.content|wash}</h1>
                 </div>
@@ -31,7 +31,7 @@
                 {include uri='design:parts/related_content.tpl'}
 
             </div>
-            <div class="span4">
+            <div class="span3">
                 <aside>
                     <section class="content-view-aside">
                         {include uri='design:parts/blog/extra_info.tpl' used_node=$node.parent}
