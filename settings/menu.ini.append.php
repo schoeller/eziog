@@ -45,4 +45,10 @@ ExtraMenuSubitemsCheck=disabled
 [MenuSettings]
 HideLeftMenuClasses[]
 AlwaysAvailable=false
+
+[SelectedMenu]
+CurrentMenu=LeftTop
+TopMenu=double_top
+LeftMenu=flat_left
+
 */ ?>
