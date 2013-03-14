@@ -5,11 +5,6 @@
             {attribute_view_gui attribute=$valid_node.data_map.image image_class='backgroundimage'}
         </div>
         <div class="overlay">
-        {if $valid_node.data_map.author.content.is_empty|not()}
-            <div class="attribute-author">
-                {attribute_view_gui attribute=$valid_node.data_map.author}
-            </div>
-        {/if}
             <div class="attribute-header">
                 <h2>{$valid_node.name|wash()}</h2>
             </div>
