@@ -43,8 +43,6 @@ ExtraIdentifierList[]=folder
 ExtraMenuSubitemsCheck=disabled
 
 [MenuSettings]
-HideLeftMenuClasses[]=landing_page
-HideLeftMenuClasses[]=blog
-HideLeftMenuClasses[]=blog_post
+HideLeftMenuClasses[]
 AlwaysAvailable=false
 */ ?>
