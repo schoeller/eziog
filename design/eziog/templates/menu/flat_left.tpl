@@ -5,6 +5,7 @@
     {if and( $second_level_node.class_identifier|eq( 'regional_group'), $module_result.content_info.node_depth|ge('3') )}
         {def $left_menu_depth = '2'}
     {/if}
+    {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
     {undef $second_level_node}
 {else}
     {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
