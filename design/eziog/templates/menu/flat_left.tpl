@@ -1,4 +1,7 @@
-{if and( $module_result.content_info.class_identifier|eq( 'regional_group'), $module_result.content_info.node_depth|eq('3') )}
+{if $module_result.content_info.node_depth|ge('3')}
+    {def $second_level_node = fetch( 'content', 'node', hash( 'node_id', $pagedata.path_array[2].node_id ) )}
+{/if}
+{if and( $second_level_node.class_identifier|eq( 'regional_group'), $module_result.content_info.node_depth|ge('3') )}
     {def $left_menu_depth = '2'}
 {else}
     {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
