@@ -1768,8 +1768,8 @@
   </Attribute>
 </Attributes>
 </ContentClass>
-<ContentClass isContainer="false" identifier="global_footer" remoteID="9bbfff1b81bc346e2ab0abeaeb44b7aa" objectNamePattern="&lt;name&gt;" urlAliasPattern="" classExistAction="replace">
-<Names ger-DE="Global footer" always-available="ger-DE"/>
+<ContentClass isContainer="false" identifier="global_footer_layout" remoteID="9bbfff1b81bc346e2ab0abeaeb44b7aa" objectNamePattern="&lt;name&gt;" urlAliasPattern="" classExistAction="replace">
+<Names ger-DE="Global footer layout" always-available="ger-DE"/>
 <Groups>
   <Group id="4" name="Setup"/>
 </Groups>
