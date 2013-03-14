@@ -50,9 +50,14 @@
         </div>
     </div>
 
+    {if or( $blog_posts_count, $events_count )}
     <div class="class-regional_group row">
+        {if $blog_posts_count}
+        {if $events_count}
         <div class="span7">
-            {if $blog_posts_count}
+        {else}
+        <div class="span10">
+        {/if}
             <div class="attribute-header">
                 <h2>Blog</h2>
             </div>
@@ -76,10 +81,14 @@
                     </div>
                 {/foreach}
             </div>
-            {/if}
         </div>
+        {/if}
+        {if $events_count}
+        {if $blog_posts_count}
         <div class="span3">
-            {if $events_count}
+        {else}
+        <div class="span10">
+        {/if}
             <div class="attribute-header">
                 <h2>Termine</h2>
             </div>
@@ -102,82 +111,81 @@
 
                 {/foreach}
             </div>
-            {/if}
+        </div>
+        {/if}
+    </div>
+    {/if}
+
+    {if $projects_count}
+    <div class="class-regional_group row">
+        <div class="span10">
+        <div class="attribute-header">
+            <h2>Projekte</h2>
+        </div>
+        <div class="tabbable tabs-left">
+            <ul id="{$node.node_id}projects" class="nav nav-tabs">
+            {foreach $projects as $project}
+                {if $projects[0].node_id|eq( $project.node_id ) }
+                    <li class="active"><a href="#tab{$project.node_id}" data-toggle="tab">{$project.data_map.short_name.content|wash()}</a></li>
+                {else}
+                    <li><a href="#tab{$project.node_id}" data-toggle="tab">{$project.data_map.short_name.content|wash()}</a></li>
+                {/if}
+            {/foreach}
+            </ul>
+            <div class="tab-content">
+            {foreach $projects as $project}
+                {if $projects[0].node_id|eq( $project.node_id ) }
+                <div class="tab-pane active" id="tab{$project.node_id}">
+                    <a href="{$project.url_alias|ezurl(no)}">
+                        <div class="attribute-image">
+                            {attribute_view_gui attribute=$project.data_map.image image_class='project_tab'}
+                        </div>
+                        <div class="overlay">
+                        {if $project.data_map.coordinator.content.is_empty|not()}
+                            <div class="attribute-author">
+                                {attribute_view_gui attribute=$project.data_map.coordinator}
+                            </div>
+                        {/if}
+                            <div class="attribute-header">
+                                <h2>{$project.name|wash()}</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {else}
+                <div class="tab-pane" id="tab{$project.node_id}">
+                    <a href="{$project.url_alias|ezurl(no)}">
+                        <div class="attribute-image">
+                            {attribute_view_gui attribute=$project.data_map.image image_class='project_tab'}
+                        </div>
+                        <div class="overlay">
+                        {if $project.data_map.coordinator.content.is_empty|not()}
+                            <div class="attribute-author">
+                                {attribute_view_gui attribute=$project.data_map.coordinator}
+                            </div>
+                        {/if}
+                            <div class="attribute-header">
+                                <h2>{$project.name|wash()}</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {/if}
+            {/foreach}
+            </div>
+        </div>
+
+        {ezscript_require(array( 'ezjsc::jquery' ) )}
+        {ezscript_require( 'bootstrap-tab.js' )}
+        <script type="text/javascript">
+            $(document).ready(function () {ldelim}
+                $('#{$node.node_id}projects').tab('show');
+            {rdelim});
+        </script>
+
         </div>
     </div>
-
-    <div class="class-regional_group row">
-            {if $projects_count}
-                <div class="span10">
-                <div class="attribute-header">
-                    <h2>Projekte</h2>
-                </div>
-                <div class="tabbable tabs-left">
-                    <ul id="myProjects" class="nav nav-tabs">
-                    {foreach $projects as $project}
-                        {if $projects[0].node_id|eq( $project.node_id ) }
-                            <li class="active"><a href="#tab{$project.node_id}" data-toggle="tab">{$project.data_map.short_name.content|wash()}</a></li>
-                        {else}
-                            <li><a href="#tab{$project.node_id}" data-toggle="tab">{$project.data_map.short_name.content|wash()}</a></li>
-                        {/if}
-                    {/foreach}
-                    </ul>
-                    <div class="tab-content">
-                    {foreach $projects as $project}
-                        {if $projects[0].node_id|eq( $project.node_id ) }
-                        <div class="tab-pane active" id="tab{$project.node_id}">
-                            <a href="{$project.url_alias|ezurl(no)}">
-                                <div class="attribute-image">
-                                    {attribute_view_gui attribute=$project.data_map.image image_class='project_tab'}
-                                </div>
-                                <div class="overlay">
-                                {if $project.data_map.coordinator.content.is_empty|not()}
-                                    <div class="attribute-author">
-                                        {attribute_view_gui attribute=$project.data_map.coordinator}
-                                    </div>
-                                {/if}
-                                    <div class="attribute-header">
-                                        <h2>{$project.name|wash()}</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        {else}
-                        <div class="tab-pane" id="tab{$project.node_id}">
-                            <a href="{$project.url_alias|ezurl(no)}">
-                                <div class="attribute-image">
-                                    {attribute_view_gui attribute=$project.data_map.image image_class='project_tab'}
-                                </div>
-                                <div class="overlay">
-                                {if $project.data_map.coordinator.content.is_empty|not()}
-                                    <div class="attribute-author">
-                                        {attribute_view_gui attribute=$project.data_map.coordinator}
-                                    </div>
-                                {/if}
-                                    <div class="attribute-header">
-                                        <h2>{$project.name|wash()}</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        {/if}
-                    {/foreach}
-                    </div>
-                </div>
-
-                {ezscript_require(array( 'ezjsc::jquery' ) )}
-                {ezscript_require( 'bootstrap-tab.js' )}
-                <script type="text/javascript">
-                {literal}
-                    $(document).ready(function () {
-                        $('#myProjects').tab('show');
-                    });
-                {/literal}
-                </script>
-
-                </div>
-            {/if}
-    </div>
+    {/if}
 
     {if $donors_count}
         <div class="class-project row">
