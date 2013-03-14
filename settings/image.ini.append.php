@@ -3,6 +3,7 @@
 # Image aliases used by eZ Flow blocks
 
 [AliasSettings]
+AliasList[]=regional_group
 AliasList[]=banner
 AliasList[]=campaign
 AliasList[]=backgroundimage
@@ -11,6 +12,10 @@ AliasList[]=contentgrid
 AliasList[]=gallery
 AliasList[]=galleryfull
 AliasList[]=imagefull
+
+[regional_group]
+Reference=original
+Filters[]=geometry/scalewidthdownonly=200
 
 [banner]
 Reference=original

@@ -1,5 +1,10 @@
-{def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )
-     $left_menu_root_url = cond( $pagedata.path_array[$left_menu_depth].url_alias, $pagedata.path_array[$left_menu_depth].url_alias, $requested_uri_string )}
+{if and( $module_result.content_info.class_identifier|eq( 'regional_group'), $module_result.content_info.node_depth|eq('3') )}
+    {def $left_menu_depth = '2'}
+{else}
+    {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
+{/if}
+
+{def $left_menu_root_url = cond( $pagedata.path_array[$left_menu_depth].url_alias, $pagedata.path_array[$left_menu_depth].url_alias, $requested_uri_string )}
 
 <aside>
   <section class="subnavigation row nav-collapse">

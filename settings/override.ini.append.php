@@ -1,5 +1,11 @@
 <?php /*
 
+[full_regional_group]
+Source=node/view/full.tpl
+MatchFile=full/regional_group.tpl
+Subdir=templates
+Match[class_identifier]=regional_group
+
 [line_faq]
 Source=node/view/line.tpl
 MatchFile=line/faq.tpl

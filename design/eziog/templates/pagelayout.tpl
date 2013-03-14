@@ -31,6 +31,7 @@
 
 </head>
 <body>
+{$module_result|attribute(show)}
 <!-- Complete page area: START -->
 
 <div id="page" class="{$pagestyle}">
