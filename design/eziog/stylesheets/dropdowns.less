@@ -50,26 +50,26 @@
   padding: 4px 0;
   margin: 0; // override default ul
   list-style: none;
-   -webkit-border-radius: 0 0 5px 5px;
-  -moz-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
-  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
-  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
+   -webkit-border-radius: 0 0 0px 0px;
+  -moz-border-radius: 0 0 0px 0px;
+  border-radius: 0 0 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
-  background-color: rgba(4, 30, 66, 0.75);
-  background-image: -moz-linear-gradient(top, rgba(4, 30, 66, 0), rgba(0, 0, 0, 0.4));
-  background-image: -ms-linear-gradient(top, rgba(4, 30, 66, 0), rgba(0, 0, 0, 0.4));
-  background-image: -webkit-gradient(linear, 0 25%, 0 0, from(rgba(4, 30, 66, 0)), to(rgba(0, 0, 0, 0.4)));
-  background-image: -webkit-linear-gradient(top, rgba(4, 30, 66, 0), rgba(0, 0, 0, 0.4));
-  background-image: -o-linear-gradient(top, rgba(4, 30, 66, 0), rgba(0, 0, 0, 0.4));
-  background-image: linear-gradient(top, rgba(4, 30, 66, 0), rgba(0, 0, 0, 0.4));
+  background-color: @blueDarkest;
+  background-image: -moz-linear-gradient(top, @blueLightestOverlay, @blueLightestOverlay);
+  background-image: -ms-linear-gradient(top, @blueLightestOverlay, @blueLightestOverlay);
+  background-image: -webkit-gradient(linear, 0 25%, 0 0, from(@blueLightestOverlay), to(@blueLightestOverlay));
+  background-image: -webkit-linear-gradient(top, , @blueLightestOverlay);
+  background-image: -o-linear-gradient(top, @blueLightestOverlay, @blueLightestOverlay);
+  background-image: linear-gradient(top, @blueLightestOverlay, @blueLightestOverlay);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(4, 30, 66, 0)', endColorstr='rgba(0, 0, 0, 0.4)', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@blueLightestOverlay', endColorstr='@blueLightestOverlay', GradientType=0);
 
   // Allow for dropdowns to go bottom up (aka, dropup-menu)
   &.bottom-up {
@@ -101,18 +101,22 @@
     clear: both;
     font-weight: normal;
     line-height: @baseLineHeight;
-    color: @gray;
+    color: @white;
     white-space: nowrap;
   }
+}
+
+.dropdown-menu li {
+    background: url(@{imagedir}bg-navi-li.gif) 7px 10px no-repeat;
 }
 
 // Hover state
 .dropdown-menu li > a:hover,
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
-  color: @white;
+  color: @blueLightest;
   text-decoration: none;
-  background-color: @linkColor;
+//  background-color: @blueLightestOverlay;
 }
 
 // Open state for the dropdown
