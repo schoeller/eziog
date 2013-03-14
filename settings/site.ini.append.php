@@ -26,7 +26,7 @@ DebugRedirection=disabled
 Cache=disabled
  
 [TemplateSettings]
-Debug=enabled
+#Debug=enabled
 ShowXHTMLCode=disabled
 ShowUsedTemplates=enabled
 TemplateCompile=disabled

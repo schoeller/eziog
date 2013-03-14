@@ -1,5 +1,10 @@
 <?php /*
 
+[PushToBlock]
+ContentClasses[]
+ContentClasses[]=landing_page
+RootSubtree=1
+
 [General]
 AllowedTypes[]
 AllowedTypes[]=Campaign
