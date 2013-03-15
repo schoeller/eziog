@@ -6,14 +6,19 @@
     <article class="class-feedback-form">
 
 <div class="row">
+    <div class="span10">
         <div class="attribute-header">
             <h1>{$node.name|wash()}</h1>
         </div>
-
+    </div>
+</div>
+<div class="row">
+    <div class="span10">
 {* validation *}
        {include name=Validation uri='design:content/collectedinfo_validation.tpl'
                 class='message-warning'
-                validation=$validation collection_attributes=$collection_attributes}
+	validation=$validation collection_attributes=$collection_attributes}
+</div>
 </div>
 
 <div class="row">
