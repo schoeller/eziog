@@ -3,6 +3,7 @@
 # Image aliases used by eZ Flow blocks
 
 [AliasSettings]
+AliasList[]=articlethumbnail
 AliasList[]=project
 AliasList[]=project_tab
 AliasList[]=donor_carousel
@@ -16,6 +17,11 @@ AliasList[]=contentgrid
 AliasList[]=gallery
 AliasList[]=galleryfull
 AliasList[]=imagefull
+
+[articlethumbnail]
+Reference=
+Filters[]
+Filters[]=geometry/scaledownonly=170;220
 
 [donor_carousel]
 Reference=
