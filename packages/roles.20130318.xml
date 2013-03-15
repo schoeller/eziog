@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<eZXMLImporter>
+<CreateRole>
+<Role name="Administrator" createRole="true">
+<Policy module="class" function="*">
+	    </Policy>
+<Policy module="collaboration" function="*">
+	    </Policy>
+<Policy module="comment" function="*">
+	    </Policy>
+<Policy module="content" function="*">
+	    </Policy>
+<Policy module="error" function="*">
+	    </Policy>
+<Policy module="ezflow" function="*">
+	    </Policy>
+<Policy module="ezinfo" function="*">
+	    </Policy>
+<Policy module="ezjscore" function="*">
+	    </Policy>
+<Policy module="ezodf" function="*">
+	    </Policy>
+<Policy module="ezoe" function="*">
+	    </Policy>
+<Policy module="flash" function="*">
+	    </Policy>
+<Policy module="infocollector" function="*">
+	    </Policy>
+<Policy module="layout" function="*">
+	    </Policy>
+<Policy module="notification" function="*">
+	    </Policy>
+<Policy module="nxc_captcha" function="*">
+	    </Policy>
+<Policy module="oauth" function="*">
+	    </Policy>
+<Policy module="oauthadmin" function="*">
+	    </Policy>
+<Policy module="pdf" function="*">
+	    </Policy>
+<Policy module="rss" function="*">
+	    </Policy>
+<Policy module="section" function="*">
+	    </Policy>
+<Policy module="state" function="*">
+	    </Policy>
+<Policy module="switchlanguage" function="*">
+	    </Policy>
+<Policy module="trigger" function="*">
+	    </Policy>
+<Policy module="url" function="*">
+	    </Policy>
+<Policy module="user" function="*">
+	    </Policy>
+<Policy module="visual" function="*">
+	    </Policy>
+<Policy module="websitetoolbar" function="*">
+	    </Policy>
+<Policy module="workflow" function="*">
+	    </Policy>
+<Policy module="xmlexport" function="*">
+	    </Policy>
+</Role>
+</CreateRole>
+</eZXMLImporter>
