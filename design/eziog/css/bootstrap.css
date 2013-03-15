@@ -1735,7 +1735,7 @@ aside h6 {
 aside h2 {
   font-size: 18px;
   line-height: 34px;
-  padding: 7px 20px 7px 20px;
+  padding: 5px 5px 5px 5px;
   font-weight: 500;
   color: #007ea6;
 }
@@ -4715,6 +4715,7 @@ a.thumbnail:hover {
   margin: 0 10px;
   color: #ffffff;
   line-height: 1.2;
+  padding: 5px 5px 5px 5px;
 }
 .block-type-mainstory.full-size a:hover,
 .block-type-mainstory.full-size a:focus {
