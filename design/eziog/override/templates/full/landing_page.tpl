@@ -1,4 +1,8 @@
-{if $node.depth|eq(1)}
+{if $node.path_identification_string|eq('projekte')}
+{set scope=global persistent_variable=hash('left_menu', false(),
+                                           'extra_menu', false())}
+{def $size=16}
+{elseif $node.depth|eq(1)}
 {set scope=global persistent_variable=hash('left_menu', false(),
                                            'extra_menu', true())}
 {def $size=13}
