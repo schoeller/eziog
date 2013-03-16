@@ -29,6 +29,7 @@ LeftIdentifierList[]=competence_group
 LeftIdentifierList[]=project_folder
 LeftIdentifierList[]=donor_folder
 LeftIdentifierList[]=contact_folder
+LeftIdentifierList[]=file_folder
 RightIdentifierList[]=folder
 RightIdentifierList[]=feedback_form
 RightIdentifierList[]=gallery
