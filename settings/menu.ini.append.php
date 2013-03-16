@@ -14,6 +14,7 @@ TopIdentifierList[]=landing_page
 TopIdentifierList[]=regional_group
 TopIdentifierList[]=competence_group
 TopIdentifierList[]=contact_folder
+TopIdentifierList[]=file_folder
 LeftIdentifierList[]=folder
 LeftIdentifierList[]=feedback_form
 LeftIdentifierList[]=gallery
