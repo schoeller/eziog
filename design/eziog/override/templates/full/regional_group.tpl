@@ -71,7 +71,7 @@
                         <span class="date">{$blog_post.data_map.publication_date.content.timestamp|l10n(shortdatetime)}</span>
                         <span class="author">{$blog_post.object.owner.name}</span>
 <!--
-                        <span class="tags"> {"Tags:"|i18n("design/ezdemo/line/blog_post")} 
+                        <span class="tags"> {"Tags:"|i18n("design/eziog/line/blog_post")} 
                             {foreach $blog_post.data_map.tags.content.keywords as $keyword}
                                 <a href={concat( $blog_post.parent.url_alias, "/(tag)/", $keyword|rawurlencode )|ezurl} title="{$keyword}">{$keyword}</a>
                                 {delimiter}, {/delimiter}
