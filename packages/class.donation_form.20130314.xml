@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eZXMLImporter>
+    <CreateClass>
+       <ContentClass isContainer="false" identifier="donation_form" remoteID="4d9aa222d96a8517eb1f9c63fdcfa5d0" objectNamePattern="&lt;short_title|title&gt;" urlAliasPattern="" classExistAction="new">
+        <Names ger-DE="Spendenformular" always-available="ger-DE" ger-DE="Spendenformular"/>
+        <Groups>
+                        <Group id="1" name="Content"/>
+                    </Groups>
+        <Attributes>
+                        <Attribute datatype="ezstring" required="true" searchable="true" informationCollector="false" translatable="true" identifier="title" placement="1">
+                <Names ger-DE="Title" always-available="ger-DE" ger-DE="Titel"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><max-length>255</max-length><default-string>New article</default-string></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezstring" required="false" searchable="true" informationCollector="false" translatable="true" identifier="short_title" placement="2">
+                <Names ger-DE="Short+title" always-available="ger-DE" ger-DE="Kurztitel"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><max-length>255</max-length><default-string/></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezxmltext" required="true" searchable="true" informationCollector="false" translatable="true" identifier="intro" placement="3">
+                <Names ger-DE="Summary" always-available="ger-DE" ger-DE="Zusammenfassung"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><text-column-count>10</text-column-count></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezxmltext" required="false" searchable="true" informationCollector="false" translatable="true" identifier="body" placement="4">
+                <Names ger-DE="Body" always-available="ger-DE" ger-DE="Textk%C3%B6rper"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><text-column-count>20</text-column-count></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezimage" required="true" searchable="false" informationCollector="false" translatable="true" identifier="image" placement="5">
+                <Names ger-DE="Image" always-available="ger-DE" ger-DE="Bild"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><max-size unit-size="mega">0</max-size></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezxmltext" required="true" searchable="true" informationCollector="false" translatable="true" identifier="caption" placement="6">
+                <Names ger-DE="Caption+Image" always-available="ger-DE" ger-DE="Bildunterschrift"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><text-column-count>2</text-column-count></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezemail" required="true" searchable="true" informationCollector="false" translatable="true" identifier="recipient" placement="7">
+                <Names ger-DE="Formularempf%C3%A4nger" always-available="ger-DE" ger-DE="Formularempf%C3%A4nger"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters/></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezselection" required="true" searchable="false" informationCollector="true" translatable="true" identifier="amount_selection" placement="8">
+                <Names ger-DE="Spendenbetrag" always-available="ger-DE" ger-DE="Spendenbetrag"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><options><option id="0" name="15"/><option id="1" name="25"/></options><is-multiselect>0</is-multiselect></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezstring" required="false" searchable="false" informationCollector="true" translatable="true" identifier="amount" placement="9">
+                <Names ger-DE="Spendenbetrag+in+EUR" always-available="ger-DE" ger-DE="Spendenbetrag+in+EUR"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><max-length>0</max-length><default-string/></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezstring" required="true" searchable="false" informationCollector="true" translatable="true" identifier="account_owner" placement="10">
+                <Names ger-DE="Kontoinhaber" always-available="ger-DE" ger-DE="Kontoinhaber"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><max-length>0</max-length><default-string/></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezinteger" required="true" searchable="false" informationCollector="true" translatable="true" identifier="account_number" placement="11">
+                <Names ger-DE="Kontonummer" always-available="ger-DE" ger-DE="Kontonummer"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><default-value>0</default-value></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezinteger" required="true" searchable="false" informationCollector="true" translatable="true" identifier="bank_number" placement="12">
+                <Names ger-DE="Bankleitzahl" always-available="ger-DE" ger-DE="Bankleitzahl"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><default-value>0</default-value></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezstring" required="true" searchable="false" informationCollector="true" translatable="true" identifier="bank" placement="13">
+                <Names ger-DE="Geldinstitut" always-available="ger-DE" ger-DE="Geldinstitut"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><max-length>0</max-length><default-string/></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezselection" required="true" searchable="false" informationCollector="true" translatable="true" identifier="gender" placement="14">
+                <Names ger-DE="Anrede" always-available="ger-DE" ger-DE="Anrede"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><options><option id="0" name="Frau"/><option id="1" name="Herr"/></options><is-multiselect>0</is-multiselect></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezstring" required="true" searchable="false" informationCollector="true" translatable="true" identifier="first_name" placement="15">
+                <Names ger-DE="Vorname" always-available="ger-DE" ger-DE="Vorname"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><max-length>0</max-length><default-string/></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezstring" required="true" searchable="false" informationCollector="true" translatable="true" identifier="last_name" placement="16">
+                <Names ger-DE="Nachname" always-available="ger-DE" ger-DE="Nachname"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><max-length>0</max-length><default-string/></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="eztext" required="true" searchable="false" informationCollector="true" translatable="true" identifier="postal_address" placement="17">
+                <Names ger-DE="Anschrift" always-available="ger-DE" ger-DE="Anschrift"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><text-column-count>2</text-column-count></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezemail" required="false" searchable="false" informationCollector="true" translatable="true" identifier="email_address" placement="18">
+                <Names ger-DE="E-Mail+Adresse" always-available="ger-DE" ger-DE="E-Mail+Adresse"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters/></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="ezboolean" required="false" searchable="false" informationCollector="true" translatable="true" identifier="receipt" placement="19">
+                <Names ger-DE="Spendenquittung+erw%C3%BCnscht" always-available="ger-DE" ger-DE="Spendenquittung+erw%C3%BCnscht"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><default-value is-set="false"/></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                        <Attribute datatype="eztext" required="false" searchable="false" informationCollector="true" translatable="true" identifier="message" placement="20">
+                <Names ger-DE="Ihre+Nachricht+an+uns+%2F+Spendenstichwort" always-available="ger-DE" ger-DE="Ihre+Nachricht+an+uns+%2F+Spendenstichwort"/>
+                <DatatypeParameters>
+<attribute><datatype-parameters><text-column-count>5</text-column-count></datatype-parameters></attribute>
+
+
+
+
+                </DatatypeParameters>
+            </Attribute>
+                      </Attributes>
+       </ContentClass>
+    </CreateClass>
+</eZXMLImporter>
