@@ -1,16 +1,34 @@
 <?php /*
 
+[block_item_donation_form]
+Source=node/view/block_item.tpl
+MatchFile=block_item/donation_form.tpl
+Subdir=templates
+Match[class_identifier]=donation_form
+
 [block_item_project]
 Source=node/view/block_item.tpl
 MatchFile=block_item/project.tpl
 Subdir=templates
 Match[class_identifier]=project
 
+[block_item_campaign_donation_form]
+Source=node/view/block_item_campaign.tpl
+MatchFile=block_item_campaign/donation_form.tpl
+Subdir=templates
+Match[class_identifier]=donation_form
+
 [block_item_campaign_project]
 Source=node/view/block_item_campaign.tpl
 MatchFile=block_item_campaign/project.tpl
 Subdir=templates
 Match[class_identifier]=project
+
+[full_donation_form]
+Source=node/view/full.tpl
+MatchFile=full/donation_form.tpl
+Subdir=templates
+Match[class_identifier]=donation_form
 
 [full_project_folder]
 Source=node/view/full.tpl
