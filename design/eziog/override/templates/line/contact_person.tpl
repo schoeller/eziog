@@ -28,11 +28,6 @@
             <span class="area_of_work">
                 {attribute_view_gui attribute=$node.data_map.description}
             </span>
-            <span class="email">
-                <div class="accordion-heading">
-                    <a href={$node.url_alias|ezurl}>{attribute_view_gui attribute=$node.data_map.email_to}</a>
-                </div>
-            </span>
         </div>
     </div>
 
