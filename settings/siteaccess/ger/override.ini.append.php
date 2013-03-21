@@ -1,5 +1,11 @@
 <?php /*
 
+[block_item_membership_form]
+Source=node/view/block_item.tpl
+MatchFile=block_item/membership_form.tpl
+Subdir=templates
+Match[class_identifier]=membership_form
+
 [block_item_donation_form]
 Source=node/view/block_item.tpl
 MatchFile=block_item/donation_form.tpl
@@ -12,6 +18,12 @@ MatchFile=block_item/project.tpl
 Subdir=templates
 Match[class_identifier]=project
 
+[block_item_campaign_membership_form]
+Source=node/view/block_item_campaign.tpl
+MatchFile=block_item_campaign/membership_form.tpl
+Subdir=templates
+Match[class_identifier]=membership_form
+
 [block_item_campaign_donation_form]
 Source=node/view/block_item_campaign.tpl
 MatchFile=block_item_campaign/donation_form.tpl
@@ -23,6 +35,12 @@ Source=node/view/block_item_campaign.tpl
 MatchFile=block_item_campaign/project.tpl
 Subdir=templates
 Match[class_identifier]=project
+
+[full_membership_form]
+Source=node/view/full.tpl
+MatchFile=full/membership_form.tpl
+Subdir=templates
+Match[class_identifier]=membership_form
 
 [full_donation_form]
 Source=node/view/full.tpl
@@ -47,6 +65,12 @@ Source=node/view/full.tpl
 MatchFile=full/donor.tpl
 Subdir=templates
 Match[class_identifier]=donor
+
+[line_membership_form]
+Source=node/view/line.tpl
+MatchFile=line/membership_form.tpl
+Subdir=templates
+Match[class_identifier]=membership_form
 
 [line_donation_form]
 Source=node/view/line.tpl
