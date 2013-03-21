@@ -45,4 +45,3 @@
     </article>
 </div>
 
-{undef $content_size}
