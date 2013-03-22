@@ -19,6 +19,7 @@ AllowedTypes[]=ItemList
 AllowedTypes[]=FeedReader
 AllowedTypes[]=FeedbackForm
 AllowedTypes[]=HighlightedItem
+AllowedTypes[]=MapItems
 
 [Campaign]
 Name=Campaign
@@ -159,5 +160,17 @@ ManualAddingOfItems=enabled
 ViewList[]
 ViewList[]=default
 ViewName[default]=Default
+
+[MapItems]
+Name=OpenStreetMap Items
+ManualAddingOfItems=disabled
+CustomAttributes[]=parent_node_id
+CustomAttributes[]=class
+CustomAttributes[]=attribute
+CustomAttributes[]=limit
+CustomAttributes[]=height
+UseBrowseMode[parent_node_id]=true
+ViewList[]=geo_located_content
+ViewName[geo_located_content]=Geo-Located Content
 
 */ ?>
