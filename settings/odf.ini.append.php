@@ -1,31 +1,63 @@
 <?php /*
 
+[ODFSettings]
+ZipPath=/usr/bin/
+
 [ODFExport]
-TemplateName=eziog.ott
+UseTemplate=true
+#TemplateName=eziog.ott
+ClassAttributeMappingToHeader=enabled
 
 [ODFImport]
-RegisteredClassArray[]=regional_group
+DefaultImportClass=article
+DefaultImportImageClass=image
+RegisteredClassArray[]
+RegisteredClassArray[]=article
+RegisteredClassArray[]=image
+RegisteredClassArray[]=blog_post
+RegisteredClassArray[]=project
 
 [article]
 DefaultImportTitleAttribute=title
 DefaultImportBodyAttribute=body
 Attribute[]
 Attribute[title]=title
+Attribute[short_title]=short_title
 Attribute[intro]=intro
 Attribute[body]=body
 Attribute[image]=image
 Attribute[caption]=caption
+Attribute[publish_date]=publish_date
 
-[regional_group]
+[image]
+DefaultImportTitleAttribute=name
+DefaultImportBodyAttribute=image
+Attribute[]
+Attribute[name]=name
+Attribute[caption]=caption
+Attribute[image]=image
+
+[blog_post]
 DefaultImportTitleAttribute=title
+DefaultImportBodyAttribute=body
+Attribute[]
+Attribute[title]=title
+Attribute[body]=body
+Attribute[publication_date]=publication_date
+
+[project]
+DefaultImportTitleAttribute=name
 DefaultImportBodyAttribute=description
 Attribute[]
 Attribute[name]=name
 Attribute[short_name]=short_name
-Attribute[short_description]=short_description
-Attribute[description]=description
 Attribute[image]=image
-Attribute[caption]=caption
-Attribute[tags]=tags
+Attribute[summary]=summary
+Attribute[description]=description
+
+[DocumentType]
+AllowedTypes[]
+AllowedTypes[]=odt
+ConvertTypes[]
 
 */ ?>
