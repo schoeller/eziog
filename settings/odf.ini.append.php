@@ -5,7 +5,7 @@ ZipPath=/usr/bin/
 
 [ODFExport]
 UseTemplate=true
-#TemplateName=eziog.ott
+TemplateName=eziog.ott
 ClassAttributeMappingToHeader=enabled
 
 [ODFImport]
