@@ -2,6 +2,7 @@
 
 [WebsiteToolbarSettings]
 HideODFContainerClasses[]=regional_group
+HideODFContainerClasses[]=project
 ODFDisplayClasses[]=project
 
 
