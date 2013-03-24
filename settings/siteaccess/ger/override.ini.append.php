@@ -48,6 +48,12 @@ MatchFile=full/donation_form.tpl
 Subdir=templates
 Match[class_identifier]=donation_form
 
+[full_project]
+Source=node/view/full.tpl
+MatchFile=full/project.tpl
+Subdir=templates
+Match[class_identifier]=project
+
 [full_project_folder]
 Source=node/view/full.tpl
 MatchFile=full/project_folder.tpl
