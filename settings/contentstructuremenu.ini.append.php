@@ -8,4 +8,5 @@ ShowClasses[]=project_folder
 ShowClasses[]=regional_group
 ShowClasses[]=competence_group
 ShowClasses[]=blog
+ShowClasses[]=project
 */ ?>

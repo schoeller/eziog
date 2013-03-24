@@ -31,6 +31,7 @@ LeftIdentifierList[]=project_folder
 LeftIdentifierList[]=donor_folder
 LeftIdentifierList[]=contact_folder
 LeftIdentifierList[]=file_folder
+LeftIdentifierList[]=project
 RightIdentifierList[]=folder
 RightIdentifierList[]=feedback_form
 RightIdentifierList[]=gallery
