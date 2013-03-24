@@ -52,7 +52,7 @@ Attribute[]
 Attribute[name]=name
 Attribute[short_name]=short_name
 Attribute[image]=image
-Attribute[intro]=intro
+Attribute[summary]=summary
 Attribute[description]=description
 Attribute[project_code]=project_code
 Attribute[target_group]=target_group
