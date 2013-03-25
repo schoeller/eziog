@@ -11,6 +11,8 @@
     {if ezmodule( 'user/register' )}
     <li id="registeruser"><a href={"/user/register"|ezurl} title="{'Register'|i18n('design/eziog/pagelayout')}">{'Register'|i18n('design/eziog/pagelayout')}</a></li>
     {/if}
+    <li id="login"><a href={"/user/login"|ezurl} title="{'Login'|i18n('design/eziog/pagelayout')}">{'Login'|i18n('design/eziog/pagelayout')}</a>
+<!--
     <li id="login" class="transition-showed">
         <a href="#login" title="show login form" class="show-login-form">{'Login'|i18n('design/eziog/pagelayout')}</a>
         <a href="#" title="hide login form" class="hide-login-form">{'Login'|i18n('design/eziog/pagelayout')}</a>
@@ -34,5 +36,6 @@
             <input type="hidden" name="RedirectURI" value="" />
         </form>
     </li>
+-->
 {/if}
 </ul>
