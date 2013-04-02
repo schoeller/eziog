@@ -56,8 +56,13 @@ Attribute[summary]=summary
 Attribute[description]=description
 Attribute[project_code]=project_code
 Attribute[target_group]=target_group
+Attribute[project_start]=project_start
 Attribute[project_finish]=project_finish
 Attribute[partner]=partner
+Attribute[location]=location
+Attribute[project_state]=project_state
+Attribute[project_volume]=project_volume
+Attribute[tags]=tags
 
 [DocumentType]
 AllowedTypes[]
