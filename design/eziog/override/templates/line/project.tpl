@@ -1,5 +1,9 @@
 {* Project - Line view *}
 
+{if is_unset( $size )}
+    {def $size = 10}
+{/if}
+
 <div class="content-view-line">
     <article class="class-project row">
 
