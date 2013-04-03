@@ -55,4 +55,8 @@ CurrentMenu=LeftTop
 TopMenu=double_top
 LeftMenu=flat_left
 
+[Topmenu_ezcomments]
+Name=Kommentare
+Tooltip=Kommentare verwalten
+
 */ ?>
