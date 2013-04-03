@@ -28,6 +28,7 @@
                                                'class_filter_array', array( 'donor' ) ) )
      $donors_count = $donors|count()}
 
+{def $size = 10}
 
 <section class="content-view-full">
     <div class="class-regional_group row">
@@ -38,12 +39,15 @@
         </div>
     </div>
     <div class="class-regional_group row">
+        {if $node.data_map.image.has_content}
         <div class="span3">
             <div class="attribute-image">
                 {attribute_view_gui attribute=$node.data_map.image image_class=regional_group}
             </div>
         </div>
-        <div class="span7">
+            {set $size = $size|sub(3)}
+        {/if}
+        <div class="span{$size}">
             <div class="attribute-description">
                 {attribute_view_gui attribute=$node.data_map.description}
             </div>
