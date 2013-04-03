@@ -42,7 +42,7 @@
 
                         <li class="dropdown">
                         {if $level_2_items|count()}
-                            <a id="{$item.node_id}" href={if eq( $ui_context, 'browse' )}{concat("content/browse/", $item.node_id)|ezurl}{else}{$item.url_alias|ezurl}{/if}{if $pagedata.is_edit} onclick="return false;"{/if} role="button" class="{$item_class|implode(" ")}">{$item.name|wash()}</a>
+                            <a id="{$item.node_id}" href={if eq( $ui_context, 'browse' )}{concat("content/browse/", $item.node_id)|ezurl}{else}{$item.url_alias|ezurl}{/if}{if $pagedata.is_edit} onclick="return false;"{/if} role="button" class="dropdown-toggle" data-toggle="dropdown">{$item.name|wash()}</a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="{$item.node_id}">
                             {foreach $level_2_items as $key => $item}
                                 <li><a tabindex="-1" href={if eq( $ui_context, 'browse' )}{concat("content/browse/", $item.node_id)|ezurl}{else}{$item.url_alias|ezurl}{/if}{if $pagedata.is_edit} onclick="return false;"{/if}>{$item.name|wash()}</a></li>
@@ -55,7 +55,6 @@
 
                     {/foreach}
                 {/if}
-            </ul>
         </div>
 
     </div>
@@ -67,7 +66,11 @@
 <script type="text/javascript">
 {literal}
     $(document).ready(function () {
-        $('.dropdown-toggle').dropdown();
+        $('.navbar .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+        });
     });
 {/literal}
 </script>
