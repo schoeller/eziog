@@ -28,7 +28,6 @@
                                                'class_filter_array', array( 'donor_folder' ) ) )
      $donor_folders_count = $donor_folders|count()}
 
-
 <section class="content-view-full">
     <div class="class-project row">
         <div class="span10">
