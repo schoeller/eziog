@@ -16,6 +16,7 @@
             <extension name="ezwt" />
             <extension name="ezodf" />
             <extension name="ngopengraph" />
+            <extension name="ezcomments" />
         </extends>
     </dependencies>
 
