@@ -9,6 +9,7 @@
          }
      ],
      "require": {
-         "ezsystems/ezpublish-legacy-installer": "*"
+         "ezsystems/ezpublish-legacy-installer": "*",
+         "ezsystems/ezwt": "dev-master"
      }
 }
