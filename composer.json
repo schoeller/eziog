@@ -1,0 +1,14 @@
+{
+     "name": "schoeller/eziog",
+     "description": "Extension for Website Ingenieure ohne Grenzen e.V.",
+     "type": "ezpublish-legacy-extension",
+     "license": "GPL-2.0",
+     "authors": [
+         {
+             "name": "Sebastian Schoeller"
+         }
+     ],
+     "require": {
+         "ezsystems/ezpublish-legacy-installer": "*"
+     }
+}
